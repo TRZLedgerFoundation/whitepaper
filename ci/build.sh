@@ -38,6 +38,6 @@ if [[ -z "$BUILDKITE_TAG" ]]; then
 fi
 
 echo --- Uploading assets for $BUILDKITE_TAG
-ci/docker-run.sh evilmachines/texlive ci/upload-release-asset.sh solana-labs whitepaper "$BUILDKITE_TAG" *.pdf
+ci/docker-run.sh evilmachines/texlive ci/upload-release-asset.sh trezoa-team whitepaper "$BUILDKITE_TAG" *.pdf
 
 

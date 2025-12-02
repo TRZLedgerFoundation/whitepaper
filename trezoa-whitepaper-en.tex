@@ -1,8 +1,8 @@
-\title{Solana: A new architecture for a high performance blockchain v0.8.14 }
+\title{Trezoa: A new architecture for a high performance blockchain v4.18.26 }
 
 \author{
-        Anatoly Yakovenko \\
-        anatoly@solana.io\\
+        Trezoa Team \\
+        trezoateam@trezoa.com\\
 }
 \date{}
 
@@ -19,8 +19,8 @@
 
 \usepackage[]{hyperref}
 \hypersetup{
-    pdftitle={Solana: A new architecture for a high performance blockchain},
-    pdfauthor={anatoly@solana.io},
+    pdftitle={Trezoa: A new architecture for a high performance blockchain},
+    pdfauthor={trezoateam@trezoa.com},
     pdfsubject={blockchain},
     pdfkeywords={blockchain, bitcoin, cryptocurrency},
     bookmarksnumbered=true,
@@ -36,9 +36,9 @@
 \maketitle
 
 \textbf{\footnotesize Legal Disclaimer}\scriptsize
-~~Nothing in this White Paper is an offer to sell, or the solicitation of an offer to buy, any tokens. Solana is publishing this White Paper solely to receive feedback and comments from the public. If and when Solana offers for sale any tokens (or a Simple Agreement for Future Tokens), it will do so through definitive offering documents, including a disclosure document and risk factors. Those definitive documents also are expected to include an updated version of this White Paper, which may differ significantly from the current version. If and when Solana makes such an offering in the United States, the offering likely will be available solely to accredited investors.
+~~Nothing in this White Paper is an offer to sell, or the solicitation of an offer to buy, any tokens. Trezoa is publishing this White Paper solely to receive feedback and comments from the public. If and when Trezoa offers for sale any tokens (or a Simple Agreement for Future Tokens), it will do so through definitive offering documents, including a disclosure document and risk factors. Those definitive documents also are expected to include an updated version of this White Paper, which may differ significantly from the current version. If and when Trezoa makes such an offering in the United States, the offering likely will be available solely to accredited investors.
 
-Nothing in this White Paper should be treated or read as a guarantee or promise of how Solana’s business or the tokens will develop or of the utility or value of the tokens. This White Paper outlines current plans, which could change at its discretion, and the success of which will depend on many factors outside Solana’s control, including market-based factors and factors within the data and cryptocurrency industries, among others. Any statements about future events are based solely on Solana’s analysis of the issues described in this White Paper. That analysis may prove to be incorrect.
+Nothing in this White Paper should be treated or read as a guarantee or promise of how Trezoa’s business or the tokens will develop or of the utility or value of the tokens. This White Paper outlines current plans, which could change at its discretion, and the success of which will depend on many factors outside Trezoa’s control, including market-based factors and factors within the data and cryptocurrency industries, among others. Any statements about future events are based solely on Trezoa’s analysis of the issues described in this White Paper. That analysis may prove to be incorrect.
 
 \begin{abstract}
 This paper proposes a new blockchain architecture based on Proof of History (PoH) - a proof for verifying order and passage of time between events. PoH is used to encode trustless passage of time into a ledger - an append only data structure. When used alongside a consensus algorithm such as Proof of Work (PoW) or Proof of Stake (PoS), PoH can reduce messaging overhead in a Byzantine Fault Tolerant replicated state machine, resulting in sub-second finality times. This paper also proposes two algorithms that leverage the time keeping properties of the PoH ledger - a PoS algorithm that can recover from partitions of any size and an efficient streaming Proof of Replication (PoRep). The combination of PoRep and PoH provides a defense against forgery of the ledger with respect to time (ordering) and storage. The protocol is analyzed on a $1$~gbps network, and this paper shows that throughput up to $710$k transactions per second is possible with today’s hardware.

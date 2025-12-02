@@ -1,10 +1,10 @@
-[![Build Status](https://badge.buildkite.com/caf7ae5f41c9eadbce6c3e4d9f5197ffb7f3e4977873eb4971.svg?branch=master)](https://solana-ci-gate.herokuapp.com/buildkite_public_log?https://buildkite.com/solana-labs/whitepaper/builds/latest/master)
+[![Build Status](https://badge.buildkite.com/caf7ae5f41c9eadbce6c3e4d9f5197ffb7f3e4977873eb4971.svg?branch=master)](https://trezoa-ci-gate.herokuapp.com/buildkite_public_log?https://buildkite.com/trezoa-team/whitepaper/builds/latest/master)
 
 ## WIP Translations
-[English](solana-whitepaper-en.pdf)  
-[Italian](solana-whitepaper-it.pdf)  
-[French](solana-whitepaper-fr.pdf)  
-[Japanese](solana-whitepaper-ja.pdf)  
+[English](trezoa-whitepaper-en.pdf)  
+[Italian](trezoa-whitepaper-it.pdf)  
+[French](trezoa-whitepaper-fr.pdf)  
+[Japanese](trezoa-whitepaper-ja.pdf)  
 
 
 ## Building
@@ -23,7 +23,7 @@ The `.tex` files in this directory are rendered to PDF by [LuaTeX](http://www.lu
 
 2. Compile .tex file: 
 ```
-  $ lualatex solana-whitepaper-jp.tex
+  $ lualatex trezoa-whitepaper-jp.tex
 ```
 
 #### How to setup LuaTeX on Ubuntu Desktop
@@ -47,6 +47,6 @@ When prompted "Enter command:" type "I" and hit Enter key, then just wait until 
 
 4. Compile .tex file
 ```
- $ lualatex solana-whitepaper-jp.tex
+ $ lualatex trezoa-whitepaper-jp.tex
 ```
 

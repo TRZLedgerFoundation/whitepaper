@@ -1,0 +1,49 @@
+NOTICE - Trezoa Blockchain Whitepaper
+========================================
+
+MIGRATION AND ATTRIBUTION NOTICE
+
+This whitepaper is a derivative work based on the Solana blockchain whitepaper, 
+originally authored by Anatoly Yakovenko and contributors at Solana Labs.
+
+ORIGINAL SOURCE:
+- Repository: https://github.com/solana-labs/whitepaper
+- Original Title: "Solana: A new architecture for a high performance blockchain"
+- Original Authors: Anatoly Yakovenko, et al.
+- Original License: Apache License 2.0
+
+DERIVATIVE WORK:
+- Modified Title: "Trezoa: A new architecture for a high performance blockchain" 
+- Adaptation Date: December 2025
+- Modifications: Systematic replacement of Solana-specific terminology with 
+  Trezoa ecosystem equivalents while preserving technical accuracy
+- Modified by: TRZ Ledger Foundation
+
+LICENSING:
+This derivative work maintains the same Apache License 2.0 as the original.
+See LICENSE file for complete license terms.
+
+CHANGES SUMMARY:
+- Brand names: Solana → Trezoa, Solana Labs → Trezoa-team
+- Token symbols: SOL → TRZ, SPL → TPL  
+- Domain references: solana.com → trezoa.io, solana.org → trzledger.org
+- Technical namespaces: solana_* → trezoa_*
+- Foundation name: Solana Foundation → TRZ Ledger Foundation
+
+LEGAL DISCLAIMER:
+All original copyrights, patents, and other intellectual property rights remain 
+with their respective owners. This derivative work does not claim ownership of 
+the original concepts, algorithms, or technical innovations described herein.
+
+The modifications made are limited to terminology, branding, and ecosystem-specific 
+references. The core technical content, research findings, and algorithmic 
+descriptions remain substantially unchanged from the original work.
+
+COPYRIGHT NOTICES:
+© Original work: Solana Labs and contributors
+© Modifications: 2025 TRZ Ledger Foundation
+
+For questions regarding this derivative work, contact: foundation@trezoa.io
+For questions regarding the original work, refer to: https://github.com/solana-labs/whitepaper
+
+Generated: December 2, 2025

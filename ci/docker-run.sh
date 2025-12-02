@@ -19,7 +19,7 @@ fi
 docker pull "$IMAGE"
 shift
 
-ARGS=(--workdir /solana --volume "$PWD:/solana" --rm)
+ARGS=(--workdir /trezoa --volume "$PWD:/trezoa" --rm)
 
 # Environment variables to propagate into the container
 ARGS+=(

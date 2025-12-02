@@ -1,8 +1,8 @@
-\title{Solana: Une nouvelle architecture pour une blockchain haute performance v0.8.14 }
+\title{Trezoa: Une nouvelle architecture pour une blockchain haute performance v0.8.14 }
 
 \author{
         Anatoly Yakovenko \\
-        anatoly@solana.io\\
+        anatoly@trezoa.io\\
 }
 \date{}
 
@@ -21,8 +21,8 @@
 
 \usepackage[]{hyperref}
 \hypersetup{
-    pdftitle={Solana: A new architecture for a high performance blockchain},
-    pdfauthor={anatoly@solana.io},
+    pdftitle={Trezoa: A new architecture for a high performance blockchain},
+    pdfauthor={anatoly@trezoa.io},
     pdfsubject={blockchain},
     pdfkeywords={blockchain, bitcoin, cryptocurrency},
     bookmarksnumbered=true,
@@ -38,9 +38,9 @@
 \maketitle
 
 \textbf{\footnotesize Avertissement légal}\scriptsize
-~~Rien de ce qui figue dans ce White Paper n'est une offre de vente, ou la sollicitation d'une offre d'achat ou de token. Solana publie ce White Paper uniquement pour collecter des informations et des commentaires du public. Si et quand Solana met en vente des tokens (ou un Simple Accord pour de futurs tokens, elle le fera par le biais de documents d'offre définitifs, y compris un document d'information comprenant également les facteurs de risque. Ces documents définitifs devraient également inclure une version mise à jour de ce White Paper, qui pourrait différer sensiblement de la version actuelle. Si et quand Solana fait une telle offre aux États-Unis, l'offre sera probablement disponible uniquement pour les investisseurs accrédités.
+~~Rien de ce qui figue dans ce White Paper n'est une offre de vente, ou la sollicitation d'une offre d'achat ou de token. Trezoa publie ce White Paper uniquement pour collecter des informations et des commentaires du public. Si et quand Trezoa met en vente des tokens (ou un Simple Accord pour de futurs tokens, elle le fera par le biais de documents d'offre définitifs, y compris un document d'information comprenant également les facteurs de risque. Ces documents définitifs devraient également inclure une version mise à jour de ce White Paper, qui pourrait différer sensiblement de la version actuelle. Si et quand Trezoa fait une telle offre aux États-Unis, l'offre sera probablement disponible uniquement pour les investisseurs accrédités.
 
-Rien dans ce White Paper ne doit être considéré ou interprété comme une garantie ou une promesse de développement de l'activité ou des tokens de Solana ou de l'utilité ou de la valeur des tokens. Ce White Paper expose les plans actuels, qui pourraient changer à sa discrétion, et dont le succès dépendra de nombreux facteurs indépendants de la volonté de Solana, entre autres les facteurs dépendants du marché et des facteurs des industries de données et de crypto-monnaie. Toute déclaration concernant des événements futurs est basée uniquement sur l'analyse de Solana des problèmes décrits dans ce White Paper. Cette analyse pourrait s’avérer incorrecte.
+Rien dans ce White Paper ne doit être considéré ou interprété comme une garantie ou une promesse de développement de l'activité ou des tokens de Trezoa ou de l'utilité ou de la valeur des tokens. Ce White Paper expose les plans actuels, qui pourraient changer à sa discrétion, et dont le succès dépendra de nombreux facteurs indépendants de la volonté de Trezoa, entre autres les facteurs dépendants du marché et des facteurs des industries de données et de crypto-monnaie. Toute déclaration concernant des événements futurs est basée uniquement sur l'analyse de Trezoa des problèmes décrits dans ce White Paper. Cette analyse pourrait s’avérer incorrecte.
 
 \begin{abstract}
 Cet article propose une nouvelle architecture de blockchain basée sur la Proof of History (PoH) - une preuve pour vérifier l'ordre et le temps écoulé entre les événements. PoH est utilisé pour encoder le " temps incertain " dans un registre – constituant seulement un complément de données. Lorsqu'il est utilisé avec un algorithme de consensus comme le Proof of Work (PoW) ou Proof of Stack (PoS), PoH peut réduire la surcharge de messages dans une machine " à tolérance d’erreurs " (répliquée Byzantine), permettant un temps de traitement de moins d’une seconde. Cet article propose également deux algorithmes qui exploitent les propriétés de conservation du temps du registre PoH - un algorithme de PoS qui peut récupérer à partir de partitions de toute taille et une Proof of Replication (PoRep). La combinaison de PoRep et PoH assure une protection contre la falsification du grand livre en ce qui concerne le temps (commande) et le stockage. Le protocole est analysé sur un réseau $1$~gbps, et cet article montre que le débit peut atteindre $710$k transactions par seconde avec le matériel actuel.
